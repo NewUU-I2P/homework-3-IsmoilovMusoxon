@@ -1,33 +1,29 @@
 void problemSolution1(float consumed_water) {
-    float cost;
-#include <iostream>
-using namespace std;
-
-int main() {
+float cost;
+    cost = 0
     if (consumed_water > 30) {
-        totalCost += 30 * 0.4;
+        Cost += 30 * 0.4;
         consumed_water -= 30;
 
         if (consumed_water > 20) {
-            totalCost += 20 * 0.12;
+            Cost += 20 * 0.12;
             consumed_water -= 20;
 
             if (consumed_water > 10) {
-                totalCost += 10 * 1.4;
+                Cost += 10 * 1.4;
                 consumed_water -= 10;
 
-                totalCost += consumed_water * 1.5;
+                Cost += consumed_water * 1.5;
             } else {
-                totalCost += consumed_water * 1.4;
+                Cost += consumed_water * 1.4;
             }
         } else {
-            totalCost += consumed_water * 0.12;
+            Cost += consumed_water * 0.12;
         }
     } else {
-        totalCost += consumed_water * 0.4;
+        Cost += consumed_water * 0.4;
     }
-    cout << totalCost << endl;
-
+    cost += 13
     return 0;
 }
 
